@@ -10,13 +10,14 @@
 
 <?php
 
-$phrase = " « Notre formation DL commence aujourd’hui »";
-$mots = array("aujourd'hui");
-$newMots = array("demain");
-$newPhrase = str_replace("aujourd'hui","demain",$phrase);
+$phrase = " « Notre formation DL commence aujourd'hui »";
+$ancienMot = "aujourd'hui";
+$newMot = "demain";
+$resultat = str_replace($ancienMot, $newMot, $phrase);
 
 echo $phrase. "<br>";
-echo $newPhrase;
+echo $resultat;
+
 
 
 

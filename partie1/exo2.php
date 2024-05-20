@@ -7,7 +7,7 @@ contenus dans celle-ci.
 <h2>Résultat</h2>
 
 <?php
-$phrase = "Notre formation DL commence aujourd’hui";
+$phrase = "Notre formation DL commence aujourd'hui";
 $nbMots = str_word_count($phrase);
 
 echo "La phrase « $phrase » contient $nbMots mots <br>";
