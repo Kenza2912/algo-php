@@ -9,10 +9,27 @@
 
 <?php
 
-$phrase = "engage le jeu que je le gagne";
-$phraseSansEspace = trim($phrase);
-$verif = strrev($phraseSansEspace);
 
-echo $verif;
+$phrase = "engage le jeu que je le gagne";
+
+function phrasePalindrome ($phrase) {
+    $result = str_replace(" ","",$phrase);
+    $result = strrev($result);
+
+    return $result;
+
+}
+
+if(phrasePalindrome($phrase) == str_replace(" ","",$phrase) ) {
+    $result = "La phrase $phrase est palindrome";
+
+}else {
+    $result = "La phrase $phrase n'est pas un palindrome";
+
+}
+echo $result;
+
+
+// $phraseSansEspace = trim($phrase);
 
 
