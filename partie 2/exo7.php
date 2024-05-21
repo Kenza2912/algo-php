@@ -19,10 +19,10 @@ $elements = [
 echo genererChecbox($elements);
 
 function genererChecbox ($elements) {
-    
+    $result = " ";
     foreach($elements as $element => $checked) {
-
-       $result = "<input type='checkbox' >";
+       $result .= "<input type='checkbox' >";
+       $result .= "<label> $element </label> <br>";
 
     }
     return $result;
