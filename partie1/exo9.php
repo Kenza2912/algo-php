@@ -14,7 +14,7 @@ $age = 32;
 $sexe = "F";
 
 
-if( $sexe == "F" and $age >= 18 and $age <= 35) {
+if( $sexe == "F" && $age >= 18 && $age <= 35) {
     $resultat = "imposable";
 
 }elseif( $sexe == "H" and $age > 20) {

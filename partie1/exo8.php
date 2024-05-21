@@ -8,19 +8,18 @@
 <?php
 
 
-$tableDeMultiplication = 2;
+$tableDeMultiplication = 8;
+echo "Table de 8:<br>";
 
-for($i = 1; $i <= 10; $i++) {
-    $resultat = $tableDeMultiplication * $i;
+// for($i = 1; $i <= 10; $i++) {
+//     $resultat = $tableDeMultiplication * $i;
   
-    echo "$tableDeMultiplication x $i = $resultat <br>";
-
-
+//     echo "$tableDeMultiplication x $i = $resultat <br>";
+// }
+$a= 1;
+while($a <= 10) {
+    $resultat = $tableDeMultiplication * $a;
+    $a++;
+  
+    echo "$tableDeMultiplication x $a = $resultat <br>"; 
 }
-
-
-// foreach($tableDeMultiplication as )
-
-
-
-//  existe t-il une méthode pour recherche une variable qu'on a utilisé
