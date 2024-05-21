@@ -12,10 +12,20 @@ dans le tableau associatif si la case est cochée ou non.
 
 $elements = [
     "choix 1" => false,
-    "choix 2" => "  ",
-    "choix 3" => "  "
+    "choix 2" => true,
+    "choix 3" => false,
 ];
 
+echo genererChecbox($elements);
+
 function genererChecbox ($elements) {
+    
+    foreach($elements as $element => $checked) {
+
+       $result = "<input type='checkbox' >";
+
+    }
+    return $result;
+
 
 }
