@@ -11,9 +11,10 @@ dans le tableau associatif si la case est cochée ou non.
 <?php
 
 $elements = [
-    "choix 1" => false,
-    "choix 2" => true,
-    "choix 3" => false,
+    "choix 1" => " ",
+    "choix 2" => "checked",
+    "choix 3" => " ",
+    "choix 4" => "checked"
 ];
 
 echo genererChecbox($elements);
@@ -21,7 +22,7 @@ echo genererChecbox($elements);
 function genererChecbox ($elements) {
     $result = " ";
     foreach($elements as $element => $checked) {
-       $result .= "<input type='checkbox' >";
+       $result .= "<input type='checkbox' $checked >";
        $result .= "<label> $element </label> <br>";
 
     }
@@ -29,3 +30,5 @@ function genererChecbox ($elements) {
 
 
 }
+
+?>

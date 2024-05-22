@@ -9,8 +9,8 @@ nouvel onglet et le tableau sera trié par ordre alphabétique de la capitale).
 
 
 <?php
-$url = "https://fr.wikipedia.org/wiki/";
-$lien = "<a href = '$url' target='_blank'> Lien </a> ";
+
+
 
 
 
@@ -25,6 +25,8 @@ $capitales = [
 echo afficherTableHTML($capitales);
 
 function afficherTableHTML($capitales) { 
+    $lien = "<a href = '$url' target='_blank'> Lien </a> ";
+    $url = "https://fr.wikipedia.org/wiki/";
     ksort($capitales);
     $result = "<table border=1>
                 <thead>
@@ -40,7 +42,7 @@ function afficherTableHTML($capitales) {
         $result .= "<tr>
                        <td>" .mb_strtoupper($pays). "</td>
                        <td>" .ucfirst($capitale). "</td>
-                       <td>" .$lien.$capitale. "</td>
+                       <td><a href = ".$url."".$capitale."> Lien </a> </td>
                     </tr>" ;
 
 }
